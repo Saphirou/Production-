@@ -1,0 +1,65 @@
+﻿<Window x:Class="WarsztatMalina.NewAuto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NewAuto" Height="900" Width="900">
+    <Grid>
+        <Button Content="Szukaj" HorizontalAlignment="Left" Margin="75,85,0,0" VerticalAlignment="Top" Width="672"/>
+
+        <TextBox Name="Nr_RejTb" Text="Nr Rejestracyjny" HorizontalAlignment="Left" Height="23" Margin="107,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="Nr_RejTb_GotFocus"/>
+        <TextBox Name="MarkaTb" Text="Marka" HorizontalAlignment="Left" Height="23" Margin="107,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="MarkaTb_GotFocus"/>
+        <TextBox Name="ModelTb" Text="Model" HorizontalAlignment="Left" Height="23" Margin="107,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="ModelTb_GotFocus"/>
+        <TextBox Name="SilnikTb" Text="Silnik" HorizontalAlignment="Left" Height="23" Margin="107,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="SilnikTb_GotFocus"/>
+        <TextBox Name="PojemnoscTb" Text="Pojemność Skokowa" HorizontalAlignment="Left" Height="23" Margin="107,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="PrzebiegTb_KeyDown" GotFocus="PojemnoscTb_GotFocus"/>
+        <TextBox Name="RocznikTb" Text="Rok Produkcji" HorizontalAlignment="Left" Height="23" Margin="107,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="PrzebiegTb_KeyDown" GotFocus="RocznikTb_GotFocus"/>
+        <TextBox Name="PoprzWizytaTb" Text="Ostatnia Wizyta" HorizontalAlignment="Left" Height="23" Margin="107,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="PoprzWizytaTb_GotFocus"/>
+        <TextBox Name="KolBadanieTb" Text="DataKolejnegoBadania" HorizontalAlignment="Left" Height="23" Margin="107,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="KolBadanieTb_GotFocus"/>
+        <TextBox Name="PrzebiegTb" Text="Przebieg" HorizontalAlignment="Left" Height="23" Margin="107,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Przebieg" KeyDown="PrzebiegTb_KeyDown" GotFocus="PrzebiegTb_GotFocus" />
+        <CheckBox Name="NrRejCB" Content="" HorizontalAlignment="Left" Margin="75,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="MarkaCB" Content="" HorizontalAlignment="Left" Margin="75,154,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="ModelCB" Content="" HorizontalAlignment="Left" Margin="75,183,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="SilnikCB" Content="" HorizontalAlignment="Left" Margin="75,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="PojemCB" Content="" HorizontalAlignment="Left" Margin="75,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="RocznikCB" Content="" HorizontalAlignment="Left" Margin="75,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="PoprzWizytaCB" Content="" HorizontalAlignment="Left" Margin="75,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="KolBadCB" Content="" HorizontalAlignment="Left" Margin="75,323,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="PrzebiegCB" Content="" HorizontalAlignment="Left" Margin="75,350,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <TextBox Name="ImieTb" Text="Imie" HorizontalAlignment="Left" Height="23" Margin="372,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="ImieTb_GotFocus"/>
+        <TextBox Name="NazwiskoTb" Text="Nazwisko" HorizontalAlignment="Left" Height="23" Margin="372,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="NazwiskoTb_GotFocus"/>
+        <TextBox Name="NrTelTb" Text="Nr Telefonu" HorizontalAlignment="Left" Height="23" Margin="372,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="PrzebiegTb_KeyDown" GotFocus="TelTb_GotFocus"/>
+        <TextBox Name="AdresTb" Text="Adres" HorizontalAlignment="Left" Height="23" Margin="372,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="AdresTb_GotFocus"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="372,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="372,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="372,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="372,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="372,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Name="ImieCB" Content="" HorizontalAlignment="Left" Margin="340,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="NazwiskoCB" Content="" HorizontalAlignment="Left" Margin="340,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="NrTelCB" Content="" HorizontalAlignment="Left" Margin="340,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="AdresCB" Content="" HorizontalAlignment="Left" Margin="340,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="340,237,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="340,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="340,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="340,320,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="340,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <TextBox Name="UslOpisTb" Text="Opis Usługi" HorizontalAlignment="Left" Height="23" Margin="627,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="UslOpisTb_GotFocus"/>
+        <TextBox Name="UsterkiOpisTb" Text="Opis Usterki" HorizontalAlignment="Left" Height="23" Margin="627,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="UsterkiOpisTb_GotFocus"/>
+        <TextBox Name="NaprDataTb" Text="DataNaprawy" HorizontalAlignment="Left" Height="23" Margin="627,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="NaprDataTb_GotFocus"/>
+        <TextBox Name="KosztUslTb" Text="Koszt Usługi" HorizontalAlignment="Left" Height="23" Margin="627,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="PrzebiegTb_KeyDown" GotFocus="KosztUslTb_GotFocus"/>
+        <TextBox Name="WykonawcaTb" Text="Wykonawca Usługi" HorizontalAlignment="Left" Height="23" Margin="627,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" GotFocus="WykonawcaTb_GotFocus"/>
+        <TextBox  HorizontalAlignment="Left" Height="23" Margin="627,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="627,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="627,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="627,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Name="UslOpisCB" Content="" HorizontalAlignment="Left" Margin="595,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="UsterOpisCB" Content="" HorizontalAlignment="Left" Margin="595,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="NaprDataCB" Content="" HorizontalAlignment="Left" Margin="595,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="KosztUslCB" Content="" HorizontalAlignment="Left" Margin="595,209,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Name="WykonawcaCB" Content="" HorizontalAlignment="Left" Margin="595,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="595,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="595,292,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="595,319,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="595,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.489"/>
+
+        <ListBox HorizontalAlignment="Left" Height="205" Margin="35,385,0,0" VerticalAlignment="Top" Width="804"/>
+    </Grid>
+</Window>

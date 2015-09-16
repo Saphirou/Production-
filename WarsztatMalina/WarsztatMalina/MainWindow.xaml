@@ -1,0 +1,26 @@
+﻿<Window x:Class="WarsztatMalina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Warsztat" Height="750" Width="925" Name="MainWin" Loaded="MainWin_Loaded">
+    <Grid Background="Silver">
+        <GroupBox  Name="PanelLogowaniaGB" Visibility="Visible" Header="Logowanie" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Height="185" Width="314">
+            <Grid HorizontalAlignment="Left" Height="151" Margin="0,10,-2,0" VerticalAlignment="Top" Width="304">
+                <Label Content="Login" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top"/>
+                <Label Content="Hasło" HorizontalAlignment="Left" Margin="47,72,0,0" VerticalAlignment="Top"/>
+                <TextBox Name="LoginTB" Focusable="True" HorizontalAlignment="Left" Height="23" Margin="134,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+                <PasswordBox Name="PasswordPB" HorizontalAlignment="Left" Margin="134,83,0,0" VerticalAlignment="Top" Width="120"/>
+                <Button Name="LoginOkBT" Content="Ok" HorizontalAlignment="Left" Margin="179,121,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Click="Zaloguj"/>
+            </Grid>
+        </GroupBox>
+        <Grid Visibility="Visible" Name="MainGrid" Width="{Binding ElementName=MainWin, Path=Width}" Height="{Binding ElementName=MainWin, Path=Height}" Background="Violet" Margin="400,0,-408,-27">
+            <Label Content="Malina Auto Enterprise " FontSize="24" HorizontalAlignment="Left" Margin="46,30,0,0" VerticalAlignment="Top" Height="52" Width="255"/>
+            <Button Content="Dodaj Nowy Pojazd" HorizontalAlignment="Left" Margin="46,124,0,0" VerticalAlignment="Top" Width="229"/>
+            <Button Content="Szukaj" HorizontalAlignment="Left" Margin="46,190,0,0" VerticalAlignment="Top" Width="229" Click="Szukaj"/>
+            <Button Content="Usun Dane" HorizontalAlignment="Left" Margin="46,281,0,0" VerticalAlignment="Top" Width="229" Click="Usun_Dane_Click"/>
+            <Button Content="Edytuj Dane" HorizontalAlignment="Left" Margin="46,150,0,0" VerticalAlignment="Top" Width="229"/>
+        </Grid>
+        <ListBox Name="lt" HorizontalAlignment="Left" Height="100" Margin="195,311,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Click="aas" Width="10" Height="10">aa</Button>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="34,344,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" KeyDown="TextBox_KeyDown" GotFocus="DoWyw" />
+    </Grid>
+</Window>
